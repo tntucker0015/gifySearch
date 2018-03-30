@@ -1,6 +1,7 @@
       // Initial array of topics
       var topics = ["trex", "dog", "pig"];
-
+const STATE_STILL = "still";
+const STATE_ANIMATE = "animate";
       
 
       // Function for displaying topic data
@@ -47,12 +48,28 @@ $(document).on("click", ".topic", function(event) {
           var rating = results[i].rating;
           var p = $("<p>").text("Rating: " + rating);
           var topicImage = $("<img>");
-          topicImage.attr("src", results[i].images.fixed_height.url);
+          topicImage.attr("src", results[i].images.fixed_height_still.url);
+          topicImage.attr("data-still", results[i].images.fixed_height_still.url);
+          topicImage.attr("data-animate", results[i].images.fixed_height.url);
+          topicImage.attr("data-state", "still");
+          topicImage.attr("class", "gif");
           gifDiv.append(p);
           gifDiv.append(topicImage);
           $("#gifs-appear-here").prepend(gifDiv);
         }
+      } 
+    
+    $(".gif").on("click", function() {
+      const element = $(this);
+      const state = $(element).attr("data-state");
+      console.log(state);
+      if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", STATE_ANIMATE);
+      } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", STATE_STILL);
       }
-      
     });
+});
 });
