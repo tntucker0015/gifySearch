@@ -1,1 +1,37 @@
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Giphy Library</title>
+  <style type="text/css" src="assets/css/style.css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Giphy Library</h1>
+    <div id="topics-view"></div>
+    <!-- <button data-topic="dog">dog</button>
+    <button data-topic="cat">cat</button>
+    <button data-topic="disney">disney</button>
+    <button data-topic="hamster">hamster</button>
+    <button data-topic="balloon">balloon</button> -->
+  <form id="topic-form">
+    <lable for="topic-input">Search a Topic</lable>
+    <input type="text" id="topic-input" name="topic-input"><br />
+    <input id="add-topic" type="submit" value="Add a Topic">
+  </form>
+    <div id="gifs-appear-here">
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/page.js"></script>
+    </div>
+</body>
+</html>
