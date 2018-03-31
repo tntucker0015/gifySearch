@@ -33,7 +33,7 @@ $(document).on("click", ".topic", function(event) {
   $("#gifs-appear-here").empty();
   var topic = $(this).attr("data-topic");
   console.log(topic);
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=Z40UNZZ3GxXzS7ZUrHjpSLm7MPkZKeNZ&limit=10";
 
   $.ajax({
     url: queryURL,
