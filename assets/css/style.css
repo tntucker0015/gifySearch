@@ -18,10 +18,17 @@ h1 {
   margin: 10px;
 }
 
+#topic-input {
+  background-image: url(../images/bookspine.jpg);
+  color: white;
+  margin-bottom: 10px;
+}
 #add-topic {
   background-image: url(../images/bookspine.jpg);
   color: white;
   border: none;
+  margin-bottom: 45px;
+  margin-left:110px;
 }
 button {
   background-image: url(../images/bookspine.jpg);
