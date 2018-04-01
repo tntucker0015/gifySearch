@@ -1,3 +1,85 @@
+body {
+  background-image: url(../images/library6.jpg);
+}
+
+input, form, #topics-view{
+ margin: 5px;
+}
+
+h1 {
+	font-family: "Lucida Bright", Georgia, serif;
+	font-size: 48px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  line-height: 65px;
+  color: white;
+  background-color: rgba(66, 65, 65, 0.596);
+  margin: 10px;
+}
+
+#add-topic {
+  background-image: url(../images/bookspine.jpg);
+  color: white;
+  border: none;
+}
+button {
+  background-image: url(../images/bookspine.jpg);
+  border: none;
+  color: white;
+  width: 70px;
+}
+
+
+#topic-form {
+  align-items: center;
+  color: white;
+  display: table-cell;
+  padding: 5px;
+}
+
+#title { 
+  text-align: center;
+  margin: auto;
+}
+#library { 
+  float: left;
+  width:100%
+}
+
+#topicList {
+  float:left;
+  overflow-wrap: break-word;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(66, 65, 65, 0.596);
+  margin: 5px;
+  max-width: 300px;
+  height: 500px;
+}
+
+#gifView, {
+  float: right;
+  width: 100%;
+  background-color: rgba(37, 34, 31, 0.493);
+}
 #gifs-appear-here {
-  display: inline-block;
+  float: left;
+  width: 70%;
+  background-color: rgba(66, 65, 65, 0.596);
+  margin: 5px;
+}
+
+.topic {
+ margin: 10px;
+}
+
+.item {
+  float:left;
+}
+
+img {
+  border: solid 5px rgba(151, 108, 68, 0.493);
+  margin: 5px;
+  padding: 0px;
 }

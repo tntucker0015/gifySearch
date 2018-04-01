@@ -46,14 +46,12 @@ $(document).on("click", ".topic", function(event) {
         if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
           var gifDiv = $("<div class='item'>");
           var rating = results[i].rating;
-          var p = $("<p>").text("Rating: " + rating);
           var topicImage = $("<img>");
           topicImage.attr("src", results[i].images.fixed_height_still.url);
           topicImage.attr("data-still", results[i].images.fixed_height_still.url);
           topicImage.attr("data-animate", results[i].images.fixed_height.url);
           topicImage.attr("data-state", "still");
           topicImage.attr("class", "gif");
-          gifDiv.append(p);
           gifDiv.append(topicImage);
           $("#gifs-appear-here").prepend(gifDiv);
         }

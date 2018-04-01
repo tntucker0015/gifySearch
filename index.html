@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Giphy Library</title>
-  <style type="text/css" src="assets/css/style.css">
-    button,
-    div,
-    form,
-    input {
-      margin: 10px;
-    }
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>The Giphy Library</h1>
-    <div id="topics-view"></div>
-  <form id="topic-form">
-    <lable for="topic-input">Search a Topic</lable>
-    <input type="text" id="topic-input" name="topic-input"><br />
-    <input id="add-topic" type="submit" value="Add a Topic">
-  </form>
-    <div id="gifs-appear-here">
+    <div id="title" class="row">
+      <h1>The Giphy Library</h1>
     </div>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/page.js"></script>
-    </div>
+    <div id="library" class="row">
+      <div id="topicList" class="col xs-12 md-3">
+        <form id="topic-form">
+          <lable for="topic-input">Search a Topic</lable>
+          <input type="text" id="topic-input" name="topic-input">
+          <br />
+          <input id="add-topic" type="submit" value="Add a Topic">
+        </form>
+        <div id="topics-view">
+        </div>
+      </div>
+      <div id="gifView" class="col xs-12 md-9">
+        <div id="gifs-appear-here"></div>
+      </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/page.js"></script>
+      </div>
 </body>
+
 </html>
